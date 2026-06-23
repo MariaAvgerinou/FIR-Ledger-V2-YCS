@@ -1,12 +1,12 @@
-# FIR Ledger
+# FIR Ledger-V2
 
 A lightweight architecture for tracking police complaints and FIR progress using hashed audit trails.
 
-## What it is
+## What it is:
 
 FIR Ledger is a system design that lets people file complaints and police officers update case progress, while maintaining hashed evidence records and automated mismatch detection.
 
-## How it works
+## How it works:
 
 - A person submits a complaint into the system and the complaint is logged as a hashed record.
 - Police officers add updates to the complaint status, also hashed for auditability.
@@ -14,7 +14,7 @@ FIR Ledger is a system design that lets people file complaints and police office
 - Any inconsistency between statements and documented evidence is reported to a central authority.
 - The central authority is assumed honest and can view evidence and trigger alerts when case stalling or mismatches are found.
 
-## Architecture
+## Architecture:
 
 1. `people` send complaints.
 2. `police officers` update progress of their work.
@@ -23,11 +23,11 @@ FIR Ledger is a system design that lets people file complaints and police office
 5. `central authority` receives reports, views evidence, and intervenes if needed.
 6. `case stalling prevention` helps ensure timely follow-up.
 
-## Why this exists
+## Why this exists:
 
 The goal is to reduce FIR stalling and increase transparency by creating an auditable chain of complaints and progress updates.
 
-## Getting Started
+## Getting Started:
 
 Follow these steps to clone the project, install dependencies, and start the FastAPI backend.
 
