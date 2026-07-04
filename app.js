@@ -389,3 +389,16 @@ if (startButton) {
     window.scrollTo({ top: 0, behavior: 'smooth' });
   });
 }
+document.addEventListener('DOMContentLoaded', function() {
+  const lookupBtn = document.getElementById('check-progress-btn');
+  const aiDemo = document.getElementById('ai-demo-result');
+
+  if (lookupBtn && aiDemo) {
+    lookupBtn.addEventListener('click', function() {
+      
+      setTimeout(function() {
+        aiDemo.style.display = 'block';
+      }, 500); 
+    });
+  }
+});
