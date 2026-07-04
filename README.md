@@ -34,7 +34,7 @@ Follow these steps to clone the project, install dependencies, and start the Fas
 1. Clone the repository:
 
    ```bash
-   git clone https://github.com/merciajeno/FIR-Ledger.git
+   git clone https://github.com/MariaAvgerinou/FIR-Ledger.git
    cd FIR-Ledger
    ```
 
