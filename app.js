@@ -366,3 +366,26 @@ function registerServiceWorker() {
       .catch((error) => console.warn('Service worker registration failed:', error));
   }
 }
+
+document.addEventListener('DOMContentLoaded', function() {
+  const citizenSection = document.getElementById('citizen-section');
+  const officerSection = document.getElementById('officer-section');
+  if (citizenSection) citizenSection.classList.add('hidden');
+  if (officerSection) officerSection.classList.add('hidden');
+});
+
+
+const startButton = document.getElementById('start-btn');
+if (startButton) {
+  startButton.addEventListener('click', function() {
+    // Κρύβουμε το hero
+    const heroSection = document.querySelector('.hero');
+    if (heroSection) heroSection.style.display = 'none';
+    
+   
+    const citizenSection = document.getElementById('citizen-section');
+    if (citizenSection) citizenSection.classList.remove('hidden');
+    
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  });
+}
